@@ -2330,7 +2330,7 @@ function clearGallerySlot(i){if(!confirm(`Clear Gallery Slot ${i+1}?`))return;ga
 
 /* ================= MUSEUM ================= */
 const contests={
-2026:[{number:"001",name:"Dizon, Stefany Reese N.",artwork:"Buwan ng Wika",category:"Digital Art",year:"2026",placement:"★ Champion"},{number:"002",name:"Cola Isnehayah S. ",artwork:"Buwan ng Wika",category:"Digital Art",year:"2026",placement:"★ 2nd Place"},{number:"003",name:"Aredidon, John Laurence L.",artwork:"Buwan ng Wika",category:"Digital Art",year:"2026",placement:"★ 3rd Place"}],
+2026:[{number:"001",name:"Dizon, Stefany Reese N.",artwork:"Buwan ng Wika",category:"Digital Art",year:"2026",placement:"★ Champion"},{number:"002",name:"Cola, Isnehayah S. ",artwork:"Buwan ng Wika",category:"Digital Art",year:"2026",placement:"★ 2nd Place"},{number:"003",name:"Aredidon, John Laurence L.",artwork:"Buwan ng Wika",category:"Digital Art",year:"2026",placement:"★ 3rd Place"}],
 2025:[{number:"001",name:"Previous Artist",artwork:"Colors of Memory",category:"Traditional",year:"2025",placement:"★ Champion"},{number:"002",name:"Previous Contestant",artwork:"Another World",category:"Digital Art",year:"2025",placement:"★ 2nd Place"},{number:"003",name:"Club Member",artwork:"The Beginning",category:"Illustration",year:"2025",placement:"★ Participant"}]
 };
 function changeContest(){const year=document.getElementById("contestSelect").value;const container=document.getElementById("contestants");container.innerHTML=contests[year].map(p=>`<div class="contestant"><span class="number">#${p.number}</span><h3>${esc(p.name)}</h3><p>Artwork: <b>${esc(p.artwork)}</b></p><p>Category: ${esc(p.category)}</p><p>Contest Year: ${p.year}</p><span class="placement">${esc(p.placement)}</span></div>`).join("");}
